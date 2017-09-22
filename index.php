@@ -19,7 +19,7 @@
     
     <div class="books-body">
        <div class="header">
-            <?php include  '_/Components/php/header.php'; ?>
+            <?php include  '_/components/php/header.php'; ?>
         </div>
         <div class="table-body">
             <div class="top-info">
@@ -38,7 +38,7 @@
                     <h1>Books Table <span class="small-text">Books</span></h1>
                 </div>
                 <div class="table-content">
-                    <?php include  '_/Components/php/table.php';?>
+                    <?php include  '_/components/php/table.php';?>
                 </div>
                 <div class="table-footer">
                     
