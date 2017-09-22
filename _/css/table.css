@@ -54,16 +54,10 @@ input{
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     border:1px solid #c8c8c8;
-    border-right:0px;
-    border-top-left-radius: 16px 16px;
-    border-bottom-left-radius: 16px 16px;
-    border-bottom-right-radius: 16px 16px;
-    border-top-right-radius: 16px 16px;
     width: 230px;
-    border: 1px solid #73879c;
 }
 input:hover{
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .dataTables_length{
@@ -77,6 +71,7 @@ input:hover{
 }
 table.dataTable thead th, table.dataTable thead td{
     border-bottom: solid 3px #ddd;
+    border-right: solid 1px #ddd;
 }
 .odd{
     background: #F9F9F9;
@@ -87,4 +82,12 @@ table.dataTable thead th, table.dataTable thead td{
 }
 .odd, .even{
     color: #73879c;
+}
+table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
 }
