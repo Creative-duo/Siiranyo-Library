@@ -1,16 +1,21 @@
+/*-------------------------------Start of Table styles------------------------------------------*/
 
-.table{
+.table {
     background: #fff;
     border: 1px solid #E6E9ED;
     width: 96%;
     padding: 20px;
     padding-top: 0;
     margin-left: 30px;
-    box-shadow: 0px 0px 0px rgba(0 , 0, 0, 0.5);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
-.table-header{
-    border-bottom-color:rgb(230, 233, 237);
+
+
+/* Styling the table header that tells the user that this table is for books */
+
+.table-header {
+    border-bottom-color: rgb(230, 233, 237);
     border-bottom-style: solid;
     border-bottom-width: 2px;
     box-sizing: border-box;
@@ -21,73 +26,176 @@
     padding-right: 5px;
     padding-top: 1px;
 }
-.table-header h1{
+
+
+/* styling the table hedaer h1 element */
+
+.table-header h1 {
     font-size: 18px;
     color: #73879c;
     font-weight: normal;
 }
-.small-text{
+
+
+/* the small text that says "Books"*/
+
+.small-text {
     color: #777777;
     font-size: 12px;
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
-label{
+.table-body{
+    padding-bottom: 20px;
+}
+
+
+/*styling all label elements of the table e.g "Show enteries , Search" */
+
+label {
     color: #73879c;
     font-size: 13px;
     font-weight: normal;
     font-family: font-family: 'Roboto', sans-serif;
 }
-select{
+
+
+/* Styling all select elements e. "Show enteries"*/
+
+select {
     height: 30px;
     width: 75px;
     padding-left: 5px;
     color: black;
     border: solid 1px #ccc;
-    margin: 0 5px; 
+    margin: 0 5px;
 }
-input{
-     padding: 5px 20px;
-    font-size:14px;
+
+
+/* Styling the search box*/
+
+input {
+    padding: 5px 20px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
-    border:1px solid #c8c8c8;
+    border: 1px solid #c8c8c8;
     width: 230px;
 }
-input:hover{
+
+
+/*Styling what happens when you over on the search box */
+
+input:hover {
     text-decoration: none;
 }
 
-.dataTables_length{
+
+/* pushing the select and the input search away from the top */
+
+.dataTables_length {
     margin-top: 5px;
 }
-#myTable{
-    border: 0.5px solid rgba(115,135,156, 0.5);
+
+
+/*Giving a border to the table*/
+
+#myTable {
+    border: 0.5px solid rgba(115, 135, 156, 0.5);
 }
-.sorting_asc, .sorting{
+
+
+/* giving color to the column headers */
+
+.sorting_asc,
+.sorting {
     color: #73879c;
 }
-table.dataTable thead th, table.dataTable thead td{
+
+
+/* giving border to the table headers from right and bottom */
+
+table.dataTable thead th,
+table.dataTable thead td {
     border-bottom: solid 3px #ddd;
     border-right: solid 1px #ddd;
 }
-.odd{
+
+
+/* giving background colors to the odd rows in the table */
+
+.odd {
     background: #F9F9F9;
-    
 }
-.even{
+
+
+/* giving background colors to the odd rows in the table */
+
+.even {
     background: #fff;
 }
-.odd, .even{
+
+
+/* giving font colors to the odd rows in the table */
+
+.odd,
+.even {
     color: #73879c;
 }
-table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1{
+
+
+/**/
+
+table.dataTable.display tbody tr.odd>.sorting_1,
+table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
 }
-table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1{
+
+
+/* giving border to the table rows from right and left */
+
+table.dataTable.display tbody tr.even>.sorting_1,
+table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
 }
+table.dataTable.no-footer{
+    border: none;
+}
+
+.red{
+    color: firebrick;
+    font-weight: 600;
+}
+.green{
+    color: #30ff00;
+    font-weight: 600;
+}
+.yellow{
+    color: #e7db1c;
+    font-weight: 600;
+}
+
+.fa-lock{
+    color: firebrick;
+    margin-left: 10px;
+}
+.odd .btn-priv{
+    background: #f6f6f6;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.even .btn-priv{
+    background: #fff;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.even .btn-priv:hover{
+    
+}
+.caret

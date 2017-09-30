@@ -1,0 +1,4 @@
+table.dataTable thead .sorting{
+    border: none;
+    border-bottom: 3px solid #ddd;
+}
