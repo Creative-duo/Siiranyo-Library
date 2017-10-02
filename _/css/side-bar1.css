@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+@font-face {
+    font-family: 'stroke';
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/137754/stroke.eot?d7yf1v");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/137754/stroke.eot?#iefixd7yf1v") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/137754/stroke.woff?d7yf1v") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/137754/stroke.ttf?d7yf1v") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="stroke-"],
+[class*=" stroke-"] {
+    display: inline-block;
+    font-family: 'stroke';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a.nav-trigger{
+    margin-top: 30px;
+}
+nav.main{
+    margin-top: 30px;
+}
+ul.nav-container{
+    padding-bottom: 137px;
+}
+nav.main h5 {
+    padding: 0 20px 10px;
+    color: #F0F3F5;
+    font-weight: 600px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #e3e3e3;
+    margin: 0;
+}
+
+nav.main ul.nav-container {
+    overflow: auto;
+}
+
+nav.main li.nav-item {
+    overflow: hidden;
+}
+
+nav.main li.nav-item span {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    color: #f2f5f7;
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background: #2A3F54;
+    padding: 12px 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    border-top: 1px solid #546372;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav.main li.nav-item:first-of-type span {
+    border-top: none;
+}
+
+nav.main li.nav-item:last-of-type span {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+nav.main li.nav-item:first-of-type span::before {
+    border-color: #28D8B2;
+}
+
+nav.main li.nav-item:first-of-type li a::before {
+    background: #28D8B2;
+}
+
+nav.main li.nav-item:nth-of-type(2) span::before {
+    border-color: #F47264;
+}
+
+nav.main li.nav-item:nth-of-type(2) li a::before {
+    background: #F47264;
+}
+
+nav.main li.nav-item:nth-of-type(3) span::before {
+    border-color: #56A1DB;
+}
+
+nav.main li.nav-item:nth-of-type(3) li a::before {
+    background: #56A1DB;
+}
+
+nav.main li.nav-item:nth-of-type(4) span::before {
+    border-color: #FBD046;
+}
+
+nav.main li.nav-item:nth-of-type(4) li a::before {
+    background: #FBD046;
+}
+
+nav.main li.nav-item:nth-of-type(5) span::before {
+    border-color: #735FA4;
+}
+
+nav.main li.nav-item:nth-of-type(5) li a::before {
+    background: #735FA4;
+}
+
+nav.main li.nav-item ul.subnav {
+    visibility: hidden;
+    max-height: 0;
+    -webkit-transition: 0.25s ease;
+    transition: 0.25s ease;
+    -webkit-transition-property: max-height, opacity;
+    transition-property: max-height, opacity;
+    opacity: 0;
+}
+
+nav.main li.nav-item ul.subnav a {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    color: #CDC9B7;
+    font-size: 12px;
+    padding: 16px 20px 16px 40px;
+    position: relative;
+}
+
+nav.main li.nav-item ul.subnav a:hover {
+    background: #374A5E;
+}
+
+nav.main li.nav-item ul.subnav li a::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 22px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+nav.main li.nav-item.open span {
+    border-bottom: 1px solid #1F2F3F;
+}
+
+nav.main li.nav-item.open span::after {
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+}
+
+nav.main li.nav-item.open ul.subnav {
+    visibility: visible;
+    max-height: 200px;
+    opacity: 1;
+}
+.side-nav ul li{
+    padding: 20px 0;
+    margin: 0;
+}
+li.nav-item span i.fa{
+    color: #F0F3F5;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+}

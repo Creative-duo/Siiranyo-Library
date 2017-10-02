@@ -1,5 +1,7 @@
 /* Start of the body styles*/
-
+html{
+    background: #F7F7F7;
+}
 .books-body {
     margin-left: 230px;
     background: #F7F7F7;
@@ -26,6 +28,7 @@
 
 .container-fluid {
     padding-right: 0px;
+  
 }
 
 
@@ -41,6 +44,7 @@
     border: none;
     margin: 0px;
     height: 30px;
+    overflow: visible;
 }
 
 

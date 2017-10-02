@@ -1,18 +1,19 @@
-
 .footer {
-  background: #fff;
-  bottom: -20px;
-  left: 230px;
-  padding: 20px 0;
-  position: fixed;
-  right: 0;
-  text-align: center;
+    background: #fff;
+    left: 230px;
+    padding: 20px 0;
+    position: fixed;
+    bottom: -20px;
+    right: 0;
+    text-align: center;
 }
-.footer p{
+
+.footer p {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
-.footer span{
+
+.footer span {
     color: chocolate;
 }

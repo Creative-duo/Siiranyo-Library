@@ -1,4 +1,4 @@
-<div class="content row">
+<div class="main-content">
     <div class="col-lg-12">
         <header class="clearfix">
             <nav class="navbar">
