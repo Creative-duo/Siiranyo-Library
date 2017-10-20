@@ -1,8 +1,16 @@
 <?php
-    
+$Author_Fname = null;
+$Author_Lname = null;
+$book_title = null;
+$book_edition = null;
+$published_date = null;
+$book_category = null;
+$isbn_code = null;
+$dewey_code = null;
+$book_quantity  = null;  
 
 
-    if (isset($_POST['submit'])) {
+    if (isset($_POST['book_submit'])) {
         
         @$Author_Fname = $_POST['Author_Fname'];
         @$Author_Lname = $_POST['Author_Lname'];

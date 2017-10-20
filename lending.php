@@ -1,8 +1,32 @@
-<?php session_start(); 
+<?php require '_/components/php/functions/conection.php';?>
+<?php session_start();
 if(!$_SESSION['login_username']){
          header('Location: login.php');
      }
 
+?>
+<?php if(isset($_POST['search'])){
+   $response = "";
+    $q = $_POST['q'];
+    
+    $query = "SELECT `Book_Title` FROM books WHERE `Book_Title` LIKE '%$q%'";
+    $result = mysqli_query($con , $query);
+        
+    if(mysqli_num_rows($result) > 0)
+    {
+        $response .="<ul class='sugestion'>";
+     while($data = mysqli_fetch_array($result)){
+         $response .="<li>".$data['Book_Title']."</li>";
+     }
+        $response .="</ul>";
+    }else {
+        $response = '<ul class="sugestion"><li>No Data Found</li></ul>';
+    }
+    
+    exit($response);
+    
+    
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +47,7 @@ if(!$_SESSION['login_username']){
     <link href="_/css/footer.css" rel="stylesheet">
     
     
+    
 </head>
 
 <body id="books">
@@ -34,10 +59,9 @@ if(!$_SESSION['login_username']){
             <?php include  '_/components/php/header.php'; ?>
         </div>
         
-        <?php require '_/components/php/functions/conection.php';?>
-        <?php require '_/components/php/functions/validate_newbook.php';?>
+        <?php require '_/components/php/functions/validate_newlending.php';?>
       
-       <?php include '_/components/php/book-form.php'; ?>
+       <?php include '_/components/php/lending-form.php'; ?>
     </div>
     
     <?php include '_/components/php/footer.php'; ?>
@@ -46,12 +70,21 @@ if(!$_SESSION['login_username']){
     <script src="https:////cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script src="_/js/myscript.js"></script>
     <script src="_/js/side-bar.js"></script>
-    <script src="_/js/submit.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-        $('select#sel1').val('<?php echo $_POST['book_category'];?>');
-
-        });
+    <script src="_/js/lending.js"></script>
+    <script>
+ $(document).ready(function(){ $('#book_name').keyup(function(){ var query = $('#book_name').val(); if(query.length > 0){ $.ajax( { url: 'lending.php', method: 'POST', data: { search: 1, q: query }, success: function(data){ $('#response').html(data); }, dataType: 'text' }, ); }; }); });
+$(document).on('click', 'li', function() {
+    var books = $(this).text();
+    $('#book_name').val(books);
+    $('#response').html("");
+});
+    $(".sugestion").blur(function(){
+         $(document).on('click', function (e) {
+        if ($(e.target).is('html')) {
+            $(this).hide();
+        }
+    })
+    });
     </script>
 </body>
 

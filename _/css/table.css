@@ -198,4 +198,12 @@ table.dataTable.no-footer{
 .even .btn-priv:hover{
     
 }
-.caret
+.delete_btn{
+    color: red;
+}
+.buttons-print{
+    background: #aeaead;
+    border-radius: 20% 20% 0 0;
+    border: solid 1px #777;
+    color: #444;
+}

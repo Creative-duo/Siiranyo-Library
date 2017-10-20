@@ -29,7 +29,7 @@ nav.main{
     margin-top: 30px;
 }
 ul.nav-container{
-    padding-bottom: 137px;
+    padding-bottom: 430px;
 }
 nav.main h5 {
     padding: 0 20px 10px;
@@ -76,9 +76,7 @@ nav.main li.nav-item:first-of-type span {
     border-top: none;
 }
 
-nav.main li.nav-item:last-of-type span {
-    border-bottom: 1px solid #e3e3e3;
-}
+
 
 nav.main li.nav-item:first-of-type span::before {
     border-color: #28D8B2;
@@ -171,7 +169,7 @@ nav.main li.nav-item.open ul.subnav {
     opacity: 1;
 }
 .side-nav ul li{
-    padding: 20px 0;
+    padding: 0px 0;
     margin: 0;
 }
 li.nav-item span i.fa{

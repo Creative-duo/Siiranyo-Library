@@ -1,9 +1,7 @@
-<?php session_start();
-    
-     if(!$_SESSION['login_username']){
+<?php session_start(); 
+    if(!$_SESSION['login_username']){
          header('Location: login.php');
      }
-
 ?>
 
 <!DOCTYPE html>
@@ -22,40 +20,27 @@
     <link href="_/css/side-bar1.css" rel="stylesheet">
     <link href="_/css/header.css" rel="stylesheet">
     <link href="_/css/books.css" rel="stylesheet">
+    <link href="_/css/table.css" rel="stylesheet">
     <link href="_/css/footer.css" rel="stylesheet">
     
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
 </head>
 
-<body id="dashboard">
+<body id="books">
    
-   
-       <?php include '_/components/php/side-bar1.php'; ?>
-    
-    <div class="books-body">
-       <div class="top-header">
-            <?php include  '_/components/php/header.php'; ?>
-        </div>
-        <div class="main-content">
-            <div class="top-info">
-                <h1> <span class="heighlight">Welcome</span> <span class="quote">Come to Somaliland National Library to acheive your next level</span></h1>
-            </div>
-            <?php require '_/components/php/functions/conection.php';?>
-            <?php include  '_/components/php/widgets.php'; ?>
-            <?php include  '_/components/php/chart.php'; ?>
-                <div class="table-footer">
-                     <?php include  '_/components/php/footer.php';?>
-                </div>
-            </div>
+       
+        <?php include '_/components/php/side-bar1.php'; ?>
+        <?php include  '_/components/php/header.php'; ?>
 
-        </div>
-    
+        <div class="alert alert-danger text-center">
+           <p class="lead">Sorry guys this page is under construction with &hearts; by Murabac</p>
+       </div>
+       
     <script src="_/js/boostrap.js"></script>
     <script src="https:////cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script src="_/js/myscript.js"></script>
     <script src="_/js/users-table.js"></script>
     <script src="_/js/side-bar.js"></script>
-    
 </body>
 
 </html>

@@ -1,3 +1,11 @@
+<?php session_start();
+    if(!$_SESSION['login_username']){
+         header('Location: login.php');
+     }
+    ob_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +54,29 @@
                     <h1>Users Table <span class="small-text">Users</span></h1>
                 </div>
                 <div class="table-content">
-                    <?php include  '_/components/php/users-table.php';?>
+                   <?php require '_/components/php/functions/conection.php';?>
+                    <?php 
+                        if (isset($_GET['source'])){
+                            $source = $_GET['source'];
+                        }else {
+                            $source = '';
+                        }
+                        switch ($source) {
+                                case 'update_user';
+                                '_/components/php/update-user.php';
+                                break;
+                                
+                                case 'morty';
+                                echo "morty son of jerry";
+                                break;
+                                
+                                default; 
+                                include  '_/components/php/users-table.php';
+                                break;
+                        }
+                    
+                    
+                    ?>
                 </div>
                 <div class="table-footer">
                     <?php include  '_/components/php/footer.php';?>

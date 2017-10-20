@@ -1,3 +1,10 @@
+<?php session_start();
+    ob_start();
+if(!$_SESSION['login_username']){
+         header('Location: login.php');
+     }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,6 +53,7 @@
                     <h1>Books Table <span class="small-text">Books</span></h1>
                 </div>
                 <div class="table-content">
+                   <?php require '_/components/php/functions/conection.php';?>
                     <?php include  '_/components/php/client-table.php';?>
                 </div>
                 <div class="table-footer">

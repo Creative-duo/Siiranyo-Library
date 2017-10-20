@@ -1,3 +1,4 @@
+
 <div class="main-content">
     <div class="col-lg-12">
         <header class="clearfix">
@@ -13,18 +14,12 @@
                     <!-- navbar-header -->
                     <nav class="header-nav">
                         <ul class="nav nav-pills pull-right">
-                            <li role="presentation" class="dropdown profile-header">
-                                <a href="#" class="dropdown-toggle user-info" data-toggle="dropdown"><img src="images/Misc/user.jpg" class="user-image">Abdirahman Mohamed <span class="caret"></span>
+                            <li role="presentation" class="profile-header">
+                                <a href="#" class="user-info"><img src="images/Misc/user.jpg" class="user-image"><?php echo $_SESSION['Login_userfname']." ". $_SESSION['Login_userlname']; ?>
                                 </a>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                    <li>
-                                        <a tabindex="-1" href="#">Log out  <i class="fa fa-sign-out pull-right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="-1" href="#">Profile  <i class="fa fa-cog pull-right"></i></a>
-                                    </li>
-                                </ul>
-                                <!-- dropdown-menu -->
+                            </li>
+                            <li role="presentation" class="profile-header logout">
+                                <a href="logout.php"><i class="fa fa-sign-out"></i> Log out</a>
                             </li>
                             <!-- dropdown -->
                         </ul>

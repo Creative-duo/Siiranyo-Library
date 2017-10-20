@@ -62,7 +62,7 @@ nav.navbar {
     width: 55px;
     height: 38px;
     margin-top: 3px;
-    margin-left: 5px;
+    margin-left: 15px;
     padding: 0px;
 }
 
@@ -175,43 +175,16 @@ nav.navbar {
 
 /*--------------------End Styles for the user link----------------------------------------------*/
 
-
-/* the dropdown element of log out link*/
-
-.dropdown-menu>li>a {
-    background: #fff;
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    color: #262626;
-    margin: 0;
+.logout{
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
-
-.dropdown-menu>li>a:hover {
-    color: #000;
-    background: #f5f5f5;
-}
-
-
-/* reseting the padding and marging of the dropdown menu */
-
-.dropdown-menu {
-    padding: 0px;
-    margin: 0;
-    width: 229px;
-}
-
-
-/* the log out icon in the dropdown style that pushes the icon away from the text*/
-
-.fa {
+.logout a{
     color: #555;
 }
+/* the log out icon in the dropdown style that pushes the icon away from the text*/
 
-.fa:hover {
-    color: #000;
-}
+
 
 
 /*--------------------------End Styles of the dropdown------------------------------------------*/
